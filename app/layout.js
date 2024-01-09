@@ -10,8 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex overflow-hidden">
-        <div style={{ flex: "1" }} className="bg-[#1E2640] h-screen">
+      <body className="flex">
+        <div style={{ flex: "1" }} className="bg-[#1E2640]">
           <Sidebar />
         </div>
 
