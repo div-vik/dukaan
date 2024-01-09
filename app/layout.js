@@ -1,6 +1,6 @@
 import "./globals.css";
-import Sidebar from "./ui/dashboard/sidebar/Sidebar";
-import Navbar from "./ui/dashboard/navbar/Navbar";
+import Sidebar from "./ui/dashboard/Sidebar";
+import Navbar from "./ui/dashboard/Navbar";
 
 export const metadata = {
   title: "Dukaan",
