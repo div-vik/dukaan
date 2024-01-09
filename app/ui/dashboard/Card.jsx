@@ -1,13 +1,15 @@
+"use client";
+
 import { MdArrowForwardIos } from "react-icons/md";
 import Image from "next/image";
 import { useState } from "react";
 
-const Cards = ({ title, amount, orders }) => {
+const Card = ({ title, amount, orders }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      onMouseEnter={() => setIsHovered(!isHovered)}
-      onMouseLeave={() => setIsHovered(!isHovered)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       className="w-full h-fit flex flex-col gap-2 bg-white shadow-md hover:bg-[#146EB4] rounded-lg hover:text-white cursor-pointer"
     >
       <div className=" flex flex-col px-5 py-6 gap-4">
@@ -45,4 +47,4 @@ const Cards = ({ title, amount, orders }) => {
   );
 };
 
-export default Cards;
+export default Card;
