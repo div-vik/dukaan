@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 
@@ -18,6 +21,7 @@ const menuItems = [
 ];
 
 const Sidebar = () => {
+  const pathname = usePathname();
   return (
     <div className="relative py-3 h-full">
       <div className="flex items-center gap-20 px-5">
@@ -48,7 +52,11 @@ const Sidebar = () => {
           <Link
             key={item.title}
             href={item.url}
-            className="flex items-center text-white my-2 pl-7 hover:bg-[#353C53] hover:rounded-[4px] py-2"
+            className={
+              pathname === item.url
+                ? "flex items-center text-white my-2 pl-7 bg-[#353C53] rounded-[4px] py-2"
+                : "flex items-center text-white my-2 pl-7 hover:bg-[#353C53] rounded-[4px] py-2"
+            }
           >
             <li className="flex">
               <Image
