@@ -58,7 +58,7 @@ const Sidebar = () => {
                 width={25}
                 height={25}
               />
-              {item.title}
+              <p className="opacity-80">{item.title}</p>
             </li>
           </Link>
         ))}
@@ -76,7 +76,7 @@ const Sidebar = () => {
             />
           </div>
           <div className="flex flex-col justify-center text-white">
-            <span className="text-sm">Available credits</span>
+            <span className="text-sm opacity-80">Available credits</span>
             <span className="text-lg">222.10</span>
           </div>
         </div>
