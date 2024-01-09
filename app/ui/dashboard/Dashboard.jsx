@@ -24,7 +24,7 @@ export default function Dashboard({ title }) {
         </div>
       </div>
 
-      <div className="hidden lg:flex h-[172.7px] justify-between gap-7">
+      <div className="flex h-[172.7px] justify-between gap-7">
         <Card title="Next Payout" amount="2,312.23" orders="23 orders" />
         <Card title="Amount Pending" amount="92,312.20" orders="13 orders" />
         <Card title="Amount Processed" amount="23,92,312.19" />
@@ -71,7 +71,7 @@ export default function Dashboard({ title }) {
             </div>
           </div>
 
-          <div className="w-full h-full">
+          <div className="w-full h-full overflow-hidden">
             <Table />
           </div>
         </div>

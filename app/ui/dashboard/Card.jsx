@@ -14,7 +14,7 @@ const Card = ({ title, amount, orders }) => {
     >
       <div className=" flex flex-col px-5 py-6 gap-4">
         <div className="flex items-center gap-2 hover:text-white">
-          <p className="font-[400] text-sm xl:text-lg">{title}</p>
+          <p className="font-[400] text-xs xl:text-lg">{title}</p>
           <span>
             <Image
               className="object-contain"
@@ -26,10 +26,12 @@ const Card = ({ title, amount, orders }) => {
           </span>
         </div>
 
-        <div className="flex justify-between items-center">
-          <p className="text-sm lg:text-xl xl:text-3xl font-[500]">₹{amount}</p>
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+          <p className="text-base lg:text-xl xl:text-3xl font-[500]">
+            ₹{amount}
+          </p>
           <span className="flex items-center gap-1">
-            <p className="text-xs lg:text-sm xl:text-base underline">
+            <p className="text-sm lg:text-sm xl:text-base underline">
               {orders}
             </p>
             {title !== "Amount Processed" && <MdArrowForwardIos />}

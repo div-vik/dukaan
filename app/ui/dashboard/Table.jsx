@@ -58,7 +58,7 @@ const Table = () => {
             <td className="py-2 px-3 font-[500] text-right">Order amount</td>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="overflow-y-scroll">
           {data.map((item) => (
             <tr key={item.orderID} className="text-left">
               <td className="py-3 px-3 border-b-[1px] text-[#146EB4] font-[500]">
