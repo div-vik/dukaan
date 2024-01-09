@@ -1,11 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Search from "./Search";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <div className="flex justify-between items-center px-10 py-3 shadow-md">
       <div className="flex gap-5 items-center">
-        <h1 className="text-xl font-[500] text-[#1A181E]">Payouts</h1>
+        <h1 className="text-xl font-[500] text-[#1A181E] capitalize">
+          {pathname.split("/").pop() === ""
+            ? "Home"
+            : pathname.split("/").pop()}
+        </h1>
         <div className="flex gap-2 text-[#4D4D4D] cursor-pointer">
           <Image
             className="object-contain"
