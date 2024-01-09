@@ -36,11 +36,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Tech Stack
 
-HTML <br />
-JavsScript <br />
-ReactJS <br />
-NextJS <br />
-TailwindCSS <br />
+-> HTML <br />
+-> JavsScript <br />
+-> ReactJS <br />
+-> NextJS <br />
+-> TailwindCSS <br />
 
 ## Deploy on Vercel
 
