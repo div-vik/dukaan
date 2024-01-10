@@ -36,20 +36,13 @@ const data = [
     refundDate: "Today, 08:45 PM",
     orderAmount: "₹1,125.00",
   },
-  {
-    orderID: "#281204",
-    status: "Successful",
-    transactionID: "131634495747",
-    refundDate: "Today, 08:45 PM",
-    orderAmount: "₹1,125.00",
-  },
 ];
 
 const Table = () => {
   return (
-    <div>
-      <table className="w-full h-full">
-        <thead className="rounded-[4px]">
+    <div className="w-full h-full">
+      <table className="w-full">
+        <thead className="rounded-[4px] sticky top-0">
           <tr className="bg-[#F2F2F2] rounded-[4px] text-left opacity-70">
             <td className="py-2 px-3 font-[500]">Order ID</td>
             <td className="py-2 px-3 font-[500]">Status</td>

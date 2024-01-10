@@ -12,7 +12,7 @@ export default function Dashboard({ title }) {
   }, [title]);
 
   return (
-    <div className="flex flex-col px-10 py-10 gap-5 bg-[#FAFAFA] h-screen overflow-hidden">
+    <div className="flex flex-col px-10 py-10 gap-5 bg-[#FAFAFA] h-screen">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-[500] text-[#1A181E]">Overview</h1>
         <div>
@@ -40,7 +40,7 @@ export default function Dashboard({ title }) {
           </span>
         </div>
 
-        <div className="flex flex-col bg-white py-3 px-3 rounded-lg gap-6">
+        <div className="flex flex-col h-full bg-white py-3 px-3 rounded-lg gap-6">
           <div className="flex justify-between items-center">
             <div className="w-fit border-[1px] rounded-[4px]">
               <Search placeholder="Order ID or transaction ID" />

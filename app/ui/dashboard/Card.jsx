@@ -26,7 +26,7 @@ const Card = ({ title, amount, orders }) => {
           </span>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+        <div className="flex justify-between items-center">
           <p className="text-base lg:text-xl xl:text-3xl font-[500]">
             ₹{amount}
           </p>
