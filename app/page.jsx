@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-2xl font-[500] text-[#1A181E]">Overview</h1>
         <div>
           <select className="px-2 py-1 bg-[#FFFFFF] border-[1px] cursor-pointer focus:outline-none">
-            <option>Select month</option>
+            {/* <option>Select month</option> */}
             <option>This Month</option>
             <option>Last Month</option>
           </select>
