@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div className="flex justify-between items-center px-10 py-3 shadow-md">
+    <div className="sticky top-0 bg-white flex justify-between items-center px-10 py-3 shadow-md">
       <div className="flex gap-5 items-center">
         <h1 className="text-xl font-[500] text-[#1A181E] capitalize">
           {pathname.split("/").pop() === ""
