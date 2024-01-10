@@ -23,7 +23,7 @@ const menuItems = [
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <div className="sticky top-0 py-3 h-screen">
+    <div className="sticky top-0 py-3 h-full lg:h-screen">
       <div className="flex items-center gap-20 px-5">
         <div className="flex gap-3">
           <Image

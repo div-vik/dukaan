@@ -70,7 +70,7 @@ export default function Dashboard({ title }) {
             </div>
           </div>
 
-          <div className="w-full h-full">
+          <div className="w-full h-full overflow-y-scroll lg:overflow-hidden">
             <Table />
           </div>
         </div>
