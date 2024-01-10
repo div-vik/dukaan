@@ -7,7 +7,7 @@ import Table from "./ui/dashboard/Table";
 
 export default function Home() {
   return (
-    <div className="flex flex-col px-10 py-7 gap-5 bg-[#FAFAFA] h-[calc(100vh-0.75rem)]">
+    <div className="flex flex-col px-10 py-7 gap-7 w-full bg-[#FAFAFA] h-[calc(100vh-0.75rem)]">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-[500] text-[#1A181E]">Overview</h1>
         <div>
@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="hidden lg:flex h-[172.7px] justify-between gap-7">
+      <div className="flex flex-col lg:flex-row lg:h-[172.7px] justify-between gap-7">
         <Card title="Next Payout" amount="2,312.23" orders="23 orders" />
         <Card title="Amount Pending" amount="92,312.20" orders="13 orders" />
         <Card title="Amount Processed" amount="23,92,312.19" />
