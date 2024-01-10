@@ -36,6 +36,13 @@ const data = [
     refundDate: "Today, 08:45 PM",
     orderAmount: "₹1,125.00",
   },
+  {
+    orderID: "#281204",
+    status: "Processing",
+    transactionID: "131634495747",
+    refundDate: "Today, 08:45 PM",
+    orderAmount: "₹1,125.00",
+  },
 ];
 
 const Table = () => {
