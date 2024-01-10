@@ -12,12 +12,11 @@ export default function Dashboard({ title }) {
   }, [title]);
 
   return (
-    <div className="flex flex-col px-10 py-7 gap-5 bg-[#FAFAFA] h-[calc(100vh-0.75rem)]">
+    <div className="flex flex-col px-10 py-10 gap-5 bg-[#FAFAFA] h-screen overflow-hidden">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-[500] text-[#1A181E]">Overview</h1>
         <div>
           <select className="px-2 py-1 bg-[#FFFFFF] border-[1px] cursor-pointer focus:outline-none">
-            <option>Select month</option>
             <option>This Month</option>
             <option>Last Month</option>
           </select>
@@ -33,10 +32,10 @@ export default function Dashboard({ title }) {
       <div className="flex flex-col gap-7">
         <div className="font-[500] text-2xl">Transactions | This Month</div>
         <div className="flex gap-5">
-          <span className="bg-[#E6E6E6] px-4 py-2 rounded-3xl">
+          <span className="bg-[#E6E6E6] cursor-pointer px-4 py-2 rounded-3xl">
             Payouts (22)
           </span>
-          <span className="bg-[#146EB4] px-4 py-2 rounded-3xl text-white">
+          <span className="bg-[#146EB4] cursor-pointer px-4 py-2 rounded-3xl text-white">
             Refunds (6)
           </span>
         </div>
@@ -71,7 +70,7 @@ export default function Dashboard({ title }) {
             </div>
           </div>
 
-          <div className="w-full h-full overflow-hidden">
+          <div className="w-full h-full">
             <Table />
           </div>
         </div>

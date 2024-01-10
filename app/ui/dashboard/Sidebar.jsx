@@ -23,11 +23,11 @@ const menuItems = [
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <div className="relative py-3 h-full">
+    <div className="sticky top-0 py-3 h-screen">
       <div className="flex items-center gap-20 px-5">
         <div className="flex gap-3">
           <Image
-            className="object-contain"
+            className="object-contain rounded-[4px]"
             src="/user.png"
             alt="user"
             width={50}
@@ -54,8 +54,8 @@ const Sidebar = () => {
             href={item.url}
             className={
               pathname === item.url
-                ? "flex items-center text-white my-2 pl-7 bg-[#353C53] rounded-[4px] py-2"
-                : "flex items-center text-white my-2 pl-7 hover:bg-[#353C53] rounded-[4px] py-2"
+                ? "flex items-center text-white my-2 pl-7 font-[500] bg-[#353C53] rounded-[4px] py-2"
+                : "flex items-center text-white my-2 pl-7 font-[500] hover:bg-[#353C53] rounded-[4px] py-2"
             }
           >
             <li className="flex">
@@ -79,13 +79,13 @@ const Sidebar = () => {
               className="object-contain"
               src="/wallet.png"
               alt="wallet"
-              width={35}
-              height={35}
+              width={25}
+              height={25}
             />
           </div>
           <div className="flex flex-col justify-center text-white">
-            <span className="text-sm opacity-80">Available credits</span>
-            <span className="text-lg">222.10</span>
+            <span className="text-xs opacity-80">Available credits</span>
+            <span className="text-lg font-[500]">222.10</span>
           </div>
         </div>
       </div>

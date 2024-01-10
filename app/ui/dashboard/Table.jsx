@@ -17,7 +17,7 @@ const data = [
   },
   {
     orderID: "#281207",
-    status: "Pending",
+    status: "Processing",
     transactionID: "131634495747",
     refundDate: "Today, 08:45 PM",
     orderAmount: "₹1,125.00",
@@ -31,7 +31,7 @@ const data = [
   },
   {
     orderID: "#281205",
-    status: "Pending",
+    status: "Processing",
     transactionID: "131634495747",
     refundDate: "Today, 08:45 PM",
     orderAmount: "₹1,125.00",
@@ -50,7 +50,7 @@ const Table = () => {
     <div>
       <table className="w-full h-full">
         <thead className="rounded-[4px]">
-          <tr className="bg-[#F2F2F2] rounded-[4px] text-left">
+          <tr className="bg-[#F2F2F2] rounded-[4px] text-left opacity-70">
             <td className="py-2 px-3 font-[500]">Order ID</td>
             <td className="py-2 px-3 font-[500]">Status</td>
             <td className="py-2 px-3 font-[500]">Transaction ID</td>
@@ -58,7 +58,7 @@ const Table = () => {
             <td className="py-2 px-3 font-[500] text-right">Order amount</td>
           </tr>
         </thead>
-        <tbody className="overflow-y-scroll">
+        <tbody className="">
           {data.map((item) => (
             <tr key={item.orderID} className="text-left">
               <td className="py-3 px-3 border-b-[1px] text-[#146EB4] font-[500]">
